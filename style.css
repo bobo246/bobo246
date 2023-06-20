@@ -1,0 +1,54 @@
+body {
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+.gugi-font {
+    font-family: 'Gothic A1', sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+
+/* 네비게이션 영역 */
+.nav-link:hover,
+.nav-link.active {
+    color: #00BF63!important;
+}
+
+
+
+/* 헤더 영역 */
+header {
+    background-image: linear-gradient(to top, rgba(45, 44, 44, 0.8), rgba(144, 144, 144, 0.384)), url(images/main-bg.jpg);
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+}
+/* 배경이미지 링크 https://cloudfront-us-east-1.images.arcpublishing.com/infobae/4VIXXZ3LKFCRPAQ4GU5YMANFYI.jpg */
+
+
+/* 서비스 섹션 */
+.card-hover:hover {
+    background-color: #ffc10726;
+}
+
+/* SNS 영역 */
+#sns-links {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/sns-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+
+/* 뉴스 섹션 */
+#news {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.188), rgba(0, 0, 0, 0.2)), url(images/cat-g.jpg);
+    background-size: cover;
+    background-position: center;
+}

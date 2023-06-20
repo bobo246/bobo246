@@ -1,12 +1,325 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ko">
+
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <p>웹페이지제작</p>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MEOWMEOW:</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 구글 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@500;600&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    </head>
+
+
+<body data-bs-spy="scroll" data-bs-target="#nav-menu">
+   
+
+    <!-- 네비게이션 영역 시작 -->
+    <nav class="navbar navbar-expand-md bg-white navbara-dark fixed-top">
+        <div class="container">
+
+            <a class="Gothic A1 navbar-brand fw-bold" href="#home">
+                <img src="images/logo.jpg" alt="로고"> MEOWMEOW:</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav-menu"
+                aria-controls="nav-menu" aria-expanded="false" aria-label="메뉴">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="nav-menu">
+                <ul class="navbar-nav ms-auto my-2">
+                    <li class="nav-item"><a class="nav-link" href="#home">홈</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#cat">고양이정보</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#news">봉사/기부처</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-img">갤러리</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sns-links">sns</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">연락처</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 네비게이션 영역 끝 -->
+<!--해당 홈페이지는 교육용 홈페이지 입니다-->
+
+<!-- 헤더 영역 시작 -->
+    <header id="home" class="d-flex flex-column justify-content-center align-items-center vh-100 text-white">
+
+        <h1 class="display-3 fw-bold mb-5">MEOWMEOW:</h1>
+        <h4 class="fs-2 mb-3">미우미우:야옹야옹</h4>
+        <p class="lead mb-5">알고 싶은 고양이의 모든 것</p>
+        <button type="button" class="btn btn-rounded-pill btn-outline-success btn-lg" data-bs-toggle="modal" data-bs-target="#introducemodal">
+            홈페이지 소개글
+            </button>
+        
+        <!-- Modal -->
+        <div class="modal fade" id="introducemodal" tabindex="-1" aria-labelledby="introducemodal" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5 text-muted" id="introducemodal">meowmeow:홈페이지 소개</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-success">
+            <img src="images/cat-head.jpg" class="img-fluid"alt="고양이 사진">
+              고양이와 살아가는 집사들과 함께하는 meowmeow입니다. </br>
+              고양이의 기본적인 생활방식과 예방접종,관련 질병,필요한 생필품에 대한 정보들을 제공합니다.
+              또한 고양이 관련 기부와 봉사처에 대한 정보들과 사진들을 제공합니다.</br>
+            </div>
+            
+          </div>
+        </div>
+        </div>
+            <!-- Modal 끝 -->
+
+        
+        <!-- Modal 끝 -->
+    </header>
+<!-- 헤더 영역 끝 -->
+<!-- 고양이소개 섹션 시작 -->
+ <section class="container overflow-hidden py-5" id="cat">
+
+    <div class="text-center py-5">
+        <h2 class="fw-bold">고양이정보</h2>
+        <p class="lead text-muted">알고 싶은 고양이의 기본 생활방식,예방접종,질병,생필품 등에 대한 모든 것</p>
+    </div>
+
+    <div class="row pb-5 gy-4">
+        <div class="col-sm-6 col-lg">
+            <div class="card h-100">
+                <img src="images/cat-1.jpg" alt="고양이사진" class="card-img-top">
+                <!--이미지 참고 https://cdn-icons-png.flaticon.com/512/3460/3460276.png -->
+                   <div class="card-body text-center">
+                    <h3 class="card-title fs-4">기본생활방식</h3>
+                    <p class="card-text">고양이의 기본생활방식에 대해 알고 </p>
+                    <a href="cat-a.html" class="btn btn-success btn-sm" target="_blank">더 알아보기</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg">
+            <div class="card h-100">
+                <img src="images/cat-2.jpg" alt="블로그 2" class="card-img-top">
+                <!--이미지 참고 https://cdn-icons-png.flaticon.com/512/6064/6064458.png -->
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-4">예방접종</h3>
+                    <p class="card-text">고양이가 필요한 예방접종의 종류들과 해야할 행동</p>
+                    <a href="cat-b.html" class="btn btn-success btn-sm" target="_blank">더 알아보기</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg">
+            <div class="card h-100">
+                <img src="images/cat-3.jpg" alt="블로그 3" class="card-img-top">
+                <!--이미지 참고 https://cdn-icons-png.flaticon.com/512/2950/2950134.png -->
+                <div class="card-body text-center">
+                    <h3 class="card-title fs-4">질병</h3>
+                    <p class="card-text">고양이가 걸리기 쉬운 질병과 대처 방법들</p>
+                    <a href="cat-c.html" class="btn btn-success btn-sm" target="_blank">더 알아보기</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-sm-6 col-lg">
+            <div class="card h-100">
+                <img src="images/cat-4.jpg" alt="블로그 4" class="card-img-top">
+                <!--이미지 참고 https://cdn-icons-png.flaticon.com/512/4201/4201513.png -->    <div class="card-body text-center">
+                    <h3 class="card-title fs-4">생필품</h3>
+                    <p class="card-text">고양이를 키우기 위해 필요한 물품의 종류들과 부가적인 물품</p>
+                    <a href="cat-d.html" class="btn btn-success btn-sm" target="_blank">더 알아보기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- 고양이정보 섹션 끝 -->
+
+<!-- 뉴스 섹션 시작 -->
+<section class="py-5" id="news">
+    <div class="container">
+        <div class="row p-4 align-items-center">
+
+            <div class="col-lg-9  text-white">
+                <h2 class="fw-bold mb-3">기부/봉사처</h2>
+                <p>고양이 기부처와 봉사처에 대한 소개</p>
+               
+            </div>
+
+            <div class="col-lg-3">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                    <a href="images/cat-new.jpg">
+                        <div class="btn-group" role="group" aria-label="Basic outlined example">
+                            <a href="cat-e.html" target="_blank">
+                            <button type="button" class="btn btn-outline-success">기부처</button></a>
+                            
+                            <a href="cat-f.html" target="_blank">
+                            <button type="button" class="btn btn-outline-success">교육처</button></a>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 뉴스 섹션 끝 -->
+
+<!-- 갤러리 섹션 시작 -->
+
+    <section class="container overflow-hidden py-5" id="about-img">
+            <div>
+    
+                <div class="text-center py-5">
+                    <h2 class="fw-bold">고양이 갤러리</h2>
+                    <p class="lead text-muted">다양한 고양이 모습을 볼 수 있는 고양이 갤러리 입니다.</p>
+                </div>
+    
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                    
+                    
+                    </div>
+                    <div class="carousel-inner">
+    
+                      <div class="carousel-item active">
+                        <img src="images/cat-g1.jpg" class="d-block w-100" alt="...">
+                        <!--이미지 참고 https://ichef.bbci.co.uk/news/640/cpsprodpb/E172/production/_126241775_getty_cats.png -->
+                      </div>
+    
+                      <div class="carousel-item">
+                        <img src="images/cat-g2.jpg" class="d-block w-100" alt="...">
+                        <!--이미지 참고 https://ichef.bbci.co.uk/news/640/cpsprodpb/9352/production/_126241773_gettyimages-1307789912-1.jpg -->
+                      </div>
+    
+                      <div class="carousel-item">
+                        <img src="images/cat-g3.jpg" class="d-block w-100" alt="...">
+                        <!--이미지 참고 https://mblogthumb-phinf.pstatic.net/MjAyMDAxMTBfMTIy/MDAxNTc4NjMxNTMxODM3.L5qaBTJ-SjlxC-f3zd8BfftX3kPfhRQ-oT3vSzD4bvgg.gQafO95sIiadV21RDmXgPVzZBLo071BMHuGdW_Fkh8Ag.PNG.vet6390/%EA%B3%A0%EC%96%91%EC%9D%B4%EC%9D%98_%EA%B1%B4%EA%B0%95%EC%83%81%ED%83%9C_%EC%B2%B4%ED%81%AC.PNG?type=w800 -->
+                      </div>
+    
+                      <div class="carousel-item">
+                        <img src="images/cat-g4.jpg" class="d-block w-100" alt="...">
+                        <!--이미지 참고 https://cdn.eyesmag.com/content/uploads/posts/2022/08/08/main-ad65ae47-5a50-456d-a41f-528b63071b7b.jpg -->  
+                      </div>
+    
+                      <div class="carousel-item">
+                        <img src="images/cat-g5.jpg" class="d-block w-100" alt="...">
+                        <!--이미지 참고 https://cat-lab.co.kr/data/editor/2111/31c272484a1ba23f905794044dee576b_1637740685_8067.jpg --> 
+                      </div>
+    
+                      <div class="carousel-item">
+                        <img src="images/cat-g6.jpg" class="d-block w-100" alt="...">
+                        <!--이미지 참고 https://www.cat-lab.co.kr/data/editor/1902/268d7f683f7116c8d1bb0e141d69ca63_1550650951_1288.JPG -->  
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+    
+    
+                   
+                
+                 
+    
+            </div>
+    
+    
+    </section>
+
+<!-- 갤러리  섹션 끝 -->
+
+<!-- SNS 섹션 시작 -->
+    <section class="py-5" id="sns-links">
+        <div class="container text-center text-white">
+            <h2 class="fw-bold mb-3">sns</h2>
+            <p>고양이 관련 커뮤니케이션 sns</p>
+            <div class="d-flex justify-content-evenly px-5 mt-4 w-50 m-auto">
+                <a href="https://www.youtube.com/?gl=KR&hl=kO" target="_blank"
+                    class="btn btn-outline-danger btn-lg px-4"><i class="bi bi-youtube"></i></a>
+                <a href="https://ko-kr.facebook.com/" class="btn btn-outline-primary  btn-lg px-4"><i class="bi bi-facebook"></i></a>
+                <a href="https://www.instagram.com/" class="btn btn-outline-warning  btn-lg px-4"><i class="bi bi-instagram"></i></a>
+            </div>
+        </div>
+    </section>
+<!-- SNS 섹션 끝 -->
+
+
+ <!-- 연락처 섹션 시작 -->
+ <section class="container overflow-hidden py-5 text-center" id="contact">
+
+    <div class="py-5">
+        <h2 class="fw-bold">Contact</h2>
+        <p class="lead text-muted">meowmeow:홈페이지 관련 연락처</p>
+    </div>
+
+    <div class="row py-5 gy-3">
+        <div class="col-md-4">
+            <div class="shadow p-4 border-bottom border-4 border-success">
+                <i class="bi bi-envelope-paper"></i>
+                <h3 class="fw-bold fs-5 py-2">이메일</h3>
+                <hr>
+                <p class="text-muted">xxxxx@naver.com</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="shadow p-4 border-bottom border-4 border-success">
+                <i class="bi bi-telephone-fill"></i>
+                <h3 class="fw-bold fs-5 py-2">전화번호</h3>
+                <hr>
+                <p class="text-muted">010-000-0000</p>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="shadow p-4 border-bottom border-4 border-success">
+                <i class="bi bi-car-front-fill "></i>
+                <h3 class="fw-bold fs-5 py-2">주소</h3>
+                <hr>
+                <p class="text-muted">서울시 노원구</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- 연락처 섹션 끝 -->
+
+<!-- 풋터 시작 -->
+    <footer class="bg-white text-black">
+        <div class="container text-center">
+            <p class="py-4 mb-0"><i class="bi bi-c-circle"></i> 2023 HOMEPAGE PROJECT<a
+                    href="file:///C:/Users/djask/Desktop/eee/index.html" target="_blank"
+                    class="Gothic A1 link-success text-decoration-none">&nbsp; MEOWMEOW:
+                </a></p>
+        </div>
+    </footer>
+    
+
+<!-- 풋터 끝 -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
